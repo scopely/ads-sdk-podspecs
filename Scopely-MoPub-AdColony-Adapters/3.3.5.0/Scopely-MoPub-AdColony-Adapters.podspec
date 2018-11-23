@@ -4,7 +4,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'MoPub-AdColony-Adapters'
+  s.name             = 'Scopely-MoPub-AdColony-Adapters'
   s.version          = '3.3.5.0'
   s.summary          = 'AdColony Adapters for mediating through MoPub.'
   s.description      = <<-DESC
