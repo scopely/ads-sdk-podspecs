@@ -15,7 +15,7 @@ For inquiries and support, please visit https://www.applovin.com/support \n
   s.homepage         = 'https://github.com/mopub/mopub-ios-mediation'
   s.license          = { :type => 'New BSD', :file => 'LICENSE' }
   s.author           = { 'MoPub' => 'support@mopub.com' }
-  s.source           = { :git => 'https://github.com/mopub/mopub-ios-mediation.git', :tag => 'a4ff7520a34da307198e7aa55f0996179ff6b59d' }
+  s.source           = { :git => 'https://github.com/mopub/mopub-ios-mediation.git', :commit => 'a4ff7520a34da307198e7aa55f0996179ff6b59d' }
   s.ios.deployment_target = '8.0'
   s.static_framework = true
   s.source_files = 'Applovin/*.{h,m}'
