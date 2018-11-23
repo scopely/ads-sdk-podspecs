@@ -19,7 +19,7 @@ s.source           = { :git => 'https://github.com/mopub/mopub-ios-mediation.git
 s.ios.deployment_target = '8.0'
 s.static_framework = true
 s.source_files = 'IronSource/*.{h,m}'
-s.dependency 'mopub-ios-sdk', '5.4'
+s.dependency 'mopub-ios-sdk', '5.3'
 s.dependency 'IronSourceSDK','6.7.10'
 end
 
