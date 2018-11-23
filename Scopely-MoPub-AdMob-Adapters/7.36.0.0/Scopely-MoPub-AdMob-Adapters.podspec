@@ -4,7 +4,7 @@
 #
 
 Pod::Spec.new do |s|
-s.name             = 'MoPub-AdMob-Adapters'
+s.name             = 'Scopely-MoPub-AdMob-Adapters'
 s.version          = '7.36.0.0'
 s.summary          = 'Google Adapters for mediating through MoPub.'
 s.description      = <<-DESC

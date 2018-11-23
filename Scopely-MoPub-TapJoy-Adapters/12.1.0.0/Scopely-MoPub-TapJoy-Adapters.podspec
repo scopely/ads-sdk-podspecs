@@ -4,7 +4,7 @@
 #
 
 Pod::Spec.new do |s|
-s.name             = 'MoPub-TapJoy-Adapters'
+s.name             = 'Scopely-MoPub-TapJoy-Adapters'
 s.version          = '12.1.0.0'
 s.summary          = 'TapJoy Adapters for mediating through MoPub.'
 s.description      = <<-DESC

@@ -4,7 +4,7 @@
 #
 
 Pod::Spec.new do |s|
-s.name             = 'MoPub-Flurry-Adapters'
+s.name             = 'Scopely-MoPub-Flurry-Adapters'
 s.version          = '9.2.1.1'
 s.summary          = 'Flurry Adapters for mediating through MoPub.'
 s.description      = <<-DESC

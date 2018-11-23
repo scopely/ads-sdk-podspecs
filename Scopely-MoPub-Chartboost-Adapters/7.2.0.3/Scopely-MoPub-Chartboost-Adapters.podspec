@@ -4,7 +4,7 @@
 #
 
 Pod::Spec.new do |s|
-s.name             = 'MoPub-Chartboost-Adapters'
+s.name             = 'Scopely-MoPub-Chartboost-Adapters'
 s.version          = '7.2.0.3'
 s.summary          = 'Chartboost Adapters for mediating through MoPub.'
 s.description      = <<-DESC

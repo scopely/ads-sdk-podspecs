@@ -4,7 +4,7 @@
 #
 
 Pod::Spec.new do |s|
-s.name             = 'MoPub-OnebyAOL-Adapters'
+s.name             = 'Scopely-MoPub-OnebyAOL-Adapters'
 s.version          = '6.8.1.0'
 s.summary          = 'Aol Adapters for mediating through MoPub.'
 s.description      = <<-DESC

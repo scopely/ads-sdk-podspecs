@@ -4,7 +4,7 @@
 #
 
 Pod::Spec.new do |s|
-s.name             = 'MoPub-IronSource-Adapters'
+s.name             = 'Scopely-MoPub-IronSource-Adapters'
 s.version          = '6.7.12.0'
 s.summary          = 'IronSource Adapters for mediating through MoPub.'
 s.description      = <<-DESC

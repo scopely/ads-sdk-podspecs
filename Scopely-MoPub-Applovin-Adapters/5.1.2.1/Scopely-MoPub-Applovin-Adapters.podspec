@@ -4,7 +4,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'MoPub-Applovin-Adapters'
+  s.name             = 'Scopely-MoPub-Applovin-Adapters'
   s.version          = '5.1.2.1'
   s.summary          = 'Applovin Adapters for mediating through MoPub.'
   s.description      = <<-DESC
