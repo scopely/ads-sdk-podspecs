@@ -5,7 +5,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'Scopely-MoPub-AdMob-Adapters'
-s.version          = '7.31.0.0'
+s.version          = '7.31.0.2'
 s.summary          = 'Google Adapters for mediating through MoPub.'
 s.description      = <<-DESC
 Supported ad formats: Banner, Interstitial, Rewarded Video, Native.\n
@@ -15,7 +15,7 @@ DESC
 s.homepage         = 'https://github.com/mopub/mopub-ios-mediation'
 s.license          = { :type => 'New BSD', :file => 'LICENSE' }
 s.author           = { 'MoPub' => 'support@mopub.com' }
-s.source           = { :git => 'https://github.com/mopub/mopub-ios-mediation.git', :commit => 'a69a27e8e7f2fb5577519bf76c72a4294b6d748e' }
+s.source           = { :git => 'https://github.com/mopub/mopub-ios-mediation.git', :commit => '379b5348a20330f65f4048f75b49c156f3e1813d' }
 s.ios.deployment_target = '8.0'
 s.static_framework = true
 s.source_files = 'AdMob/*.{h,m}'
