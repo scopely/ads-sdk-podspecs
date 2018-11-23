@@ -5,7 +5,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'Scopely-MoPub-FacebookAudienceNetwork-Adapters'
-s.version          = '5.0.1.0'
+s.version          = '5.0.1'
 s.summary          = 'Facebook Adapters for mediating through MoPub.'
 s.description      = <<-DESC
 Supported ad formats: Banners, Interstitial, Rewarded Video and Native.\n
@@ -19,6 +19,6 @@ s.source           = { :git => 'https://github.com/mopub/mopub-ios-mediation.git
 s.ios.deployment_target = '9.0'
 s.static_framework = true
 s.source_files = 'FacebookAudienceNetwork/*.{h,m}'
-s.dependency 'mopub-ios-sdk', '5.0'
+s.dependency 'mopub-ios-sdk', '5.3'
 s.dependency 'FBAudienceNetwork', '5.0.1'
 end
