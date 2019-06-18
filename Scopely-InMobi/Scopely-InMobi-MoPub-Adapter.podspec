@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint Scopely-MoPub-InMobi-Adapter.podspec' to ensure this is a
+# Be sure to run `pod lib lint Scopely-InMobi-MoPub-Adapter.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'Scopely-MoPub-InMobi-Adapter'
+  s.name             = 'Scopely-InMobi-MoPub-Adapter'
   s.version          = '8.1.0'
   s.summary          = 'InMobi Adapter for mediating through MoPub.'
   s.description      = <<-DESC
@@ -16,14 +16,15 @@ Pod::Spec.new do |s|
   For inquiries and support, please reach out to https://support.inmobi.com/mytickets. \n
                        DESC
 
-  s.homepage         = 'https://github.com/scopely/ads-sdk-podspecs/tree/master/Scopely-MoPub-InMobi-Adapters/8.1.0'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.homepage         = 'https://github.com/scopely/ads-sdk-podspecs'
+  s.license          = { :type => 'Commercial', :file => 'Scopely-InMobi/LICENSE' }
   s.author           = { 'carlos-scopely' => 'carloscastillo@scopely.com' }
-  s.source           = { :http => 'https://ccastillo-dev.s3.amazonaws.com/Scopely-MoPub-InMobi-Adapter-8.1.0.zip' }
+  s.source           = { :git => 'https://github.com/scopely/ads-network-pods.git', :tag => "InMobi-#{s.version}" }
 
   s.ios.deployment_target = '8.0'
-
-  s.source_files = 'Scopely-MoPub-InMobi-Adapter/Classes/**/*'
+  s.static_framework = true
+  s.source_files = 'Scopely-InMobi/MoPub-Adapter/*.{h,m}'
+  s.vendored_frameworks = 'Scopely-InMobi/SDK/InMobiSDK.framework'
   s.dependency 'mopub-ios-sdk', '5.7.1'
-  s.ios.vendored_frameworks = 'Scopely-MoPub-InMobi-Adapter/InMobiSDK.framework'
 end
+ 
