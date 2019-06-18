@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/scopely/ads-sdk-podspecs'
   s.license          = { :type => 'Commercial', :file => 'Scopely-InMobi/LICENSE' }
   s.author           = { 'carlos-scopely' => 'carloscastillo@scopely.com' }
-  s.source           = { :git => 'https://github.com/scopely/ads-network-pods.git', :tag => "InMobi-#{s.version}" }
+  s.source           = { :git => 'https://github.com/scopely/ads-sdk-podspecs.git', :tag => "InMobi-#{s.version}" }
 
   s.ios.deployment_target = '8.0'
   s.static_framework = true
