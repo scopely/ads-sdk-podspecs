@@ -1,13 +1,13 @@
-# Scopely-MoPub-InMobi-Adapter
+# Scopely-InMobi-MoPub-Adapter
 
 
 ## Installation
 
-Scopely-MoPub-InMobi-Adapter is available through [CocoaPods](https://cocoapods.org). To install
+Scopely-InMobi-MoPub-Adapter is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Scopely-MoPub-InMobi-Adapter', '8.1.0'
+pod 'Scopely-InMobi-MoPub-Adapter', '8.1.0'
 ```
 
 ## Author
