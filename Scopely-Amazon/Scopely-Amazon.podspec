@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   spec.summary      = "Scopely-Amazon SDK for games."
 
   spec.description  = <<-DESC
-  Amazon SDK for Ads
+  Amazon SDK for Ads for showing Banners on games. It contains also other types of ads
                    DESC
 
   spec.homepage     = "https://github.com/scopely/ads-sdk-podspecs"
