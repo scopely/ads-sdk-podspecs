@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |spec|
-  spec.name         = "Scopely-Amazon"
+  spec.name         = "Scopely-Amazon-Proj"
   spec.version      = "3.0.0"
   spec.summary      = "Scopely-Amazon SDK for games."
 
