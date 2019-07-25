@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.homepage     = "https://github.com/scopely/ads-sdk-podspecs"
   spec.license      = "MIT"
-  spec.author             = { "Jose Pinero" => "jose.pinero@scopely.com" }
+  spec.author       = { "Jose Pinero" => "jose.pinero@scopely.com" }
   spec.source       = { :git => "https://github.com/scopely/ads-sdk-podspecs.git", :tag => "Amazon-#{spec.version}" }
 
   spec.ios.deployment_target = '8.0'
