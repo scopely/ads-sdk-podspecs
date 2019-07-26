@@ -22,5 +22,5 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
   s.static_framework = true
-  s.vendored_frameworks = 'SDK/DTBiOSSDK.framework'
+  s.vendored_frameworks = 'Scopely-Amazon/SDK/DTBiOSSDK.framework'
 end
