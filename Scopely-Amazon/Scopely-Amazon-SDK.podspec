@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
 
   s.homepage     = 'https://github.com/scopely/ads-sdk-podspecs'
-  s.license      = 'MIT'
+  s.license      = { :type => 'MIT', :file => 'Scopely-Amazon/LICENSE' }
   s.author       = { 'Jose Pinero' => 'jose.pinero@scopely.com' }
   s.source       = { :git => 'https://github.com/scopely/ads-sdk-podspecs.git', :tag => "Amazon-#{s.version}" }
 
