@@ -81,6 +81,14 @@ typedef NS_ENUM(NSInteger, IMInterstitialAnimationType) {
  * A unique identifier for the creative.
  */
 @property (nonatomic, strong, readonly) NSString* creativeId;
+
+/**
+ * init and new methods are unavailable for this class
+ * use "initWithPlacementId:" or "initWithPlacementId:delegate:" method.
+ */
++ (instancetype)new NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
+
 /**
  * Initialize an Interstitial with the given PlacementId
  * @param placementId The placementId for loading the interstitial
@@ -91,7 +99,7 @@ typedef NS_ENUM(NSInteger, IMInterstitialAnimationType) {
  * @param placementId The placementId for loading the interstitial
  * @param delegate The delegate to receive callbacks
  */
--(instancetype)initWithPlacementId:(long long)placementId delegate:(id<IMInterstitialDelegate>)delegate;
+-(instancetype)initWithPlacementId:(long long)placementId delegate:(id<IMInterstitialDelegate>)delegate NS_DESIGNATED_INITIALIZER;
 /**
  * Loads an Interstitial
  */

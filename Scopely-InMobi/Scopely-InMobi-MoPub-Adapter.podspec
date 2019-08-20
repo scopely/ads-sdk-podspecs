@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Scopely-InMobi-MoPub-Adapter'
-  s.version          = '8.1.0'
+  s.version          = '8.2.0'
   s.summary          = 'InMobi Adapter for mediating through MoPub.'
   s.description      = <<-DESC
   Supported ad formats: Interstitial, Rewarded Video.\n
@@ -25,6 +25,6 @@ Pod::Spec.new do |s|
   s.static_framework = true
   s.source_files = 'Scopely-InMobi/MoPub-Adapter/*.{h,m}'
   s.vendored_frameworks = 'Scopely-InMobi/SDK/InMobiSDK.framework'
-  s.dependency 'mopub-ios-sdk', '5.7.1'
+  s.dependency 'mopub-ios-sdk', '5.8.0'
 end
  

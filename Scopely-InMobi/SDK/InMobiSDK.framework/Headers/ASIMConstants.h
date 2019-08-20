@@ -23,32 +23,6 @@ typedef NS_ENUM(NSInteger, ASIMPrimaryIntegration) {
     kASIMPrimaryIntegrationInMobi = 1
 };
 
-typedef NS_ENUM(NSInteger, ASIMTrueEventType) {
-    kASIMTrueEventTypeRequest = 89,
-    kASIMTrueEventTypeReady = 90,
-    kASIMTrueEventTypeRequestTerminated = 91,
-    kASIMTrueEventTypeFailed = 92,
-    kASIMTrueEventTypeFill,
-    kASIMTrueEventTypeRequestNotFilled,
-    kASIMTrueEventTypeAdClicked,
-    kASIMTrueEventTypeAdViewRequested,
-    kASIMTrueEventTypeAdViewRequestRejected,
-    kASIMTrueEventTypeAdViewDisplayed,
-    kASIMTrueEventTypeAdViewClosed,
-    kASIMTrueEventTypeAdViewExpanded,
-    kASIMTrueEventTypeAdViewCollapsed,
-    kASIMTrueEventTypeAdViewFailedToBuild
-};
-
-typedef NS_ENUM(NSInteger, ASIMTrueEventReason) {
-    kASIMTrueEventReasonNotApplicable,
-    kASIMTrueEventReasonFrequentRequests,
-    kASIMTrueEventReasonReloadNotPermitted,
-    kASIMTrueEventReasonNetworkNotAvailable,
-    kASIMTrueEventReasonLoadInProgress,
-    kASIMTrueEventReasonRequestCreationFailed
-};
-
 typedef NS_ENUM(NSInteger, ASIMAdState) {
     kASIMAdStateInit = 0,
     kASIMAdStateLoading,
@@ -57,9 +31,7 @@ typedef NS_ENUM(NSInteger, ASIMAdState) {
     kASIMAdStateRendered,
     kASIMAdStateActive,
     kASIMAdStateDismissed,
-    kASIMAdStateFailed,
-    kASIMAdStateFetchingSignals,
-    kASIMAdStateFetchedSignals
+    kASIMAdStateFailed
 };
 
 typedef NS_ENUM(NSInteger, ASIMUnifiedTimeout) {
@@ -75,9 +47,6 @@ typedef NS_ENUM(NSInteger, ASIMUnifiedTimeout) {
 extern NSString* const kASIMUnifiedMediationNetworkName;
 extern NSString* const kASIMUnifiedSDKName;
 extern NSString* const kASIMUnifiedSDKVersion;
-
-// AS TRC Default Base Event URL
-extern NSString* const kASIMDefaultTRCBaseEventUrl;
 
 // Unified SDK Timeouts
 extern NSTimeInterval const kASIMUnifiedStep0_Preinit_TimeoutDefaultVal;
@@ -104,9 +73,6 @@ extern NSString* const kASIMKVStoreSDKSettings;
 extern NSString* const kASIMKVStoreMappingManagers;
 extern NSString* const kASIMKVStorePlacementInfo;
 extern NSString* const kASIMKVStoreTrueBaseEventUrls;
-extern NSString* const kASIMKVStoreBannerExtras;
-extern NSString* const kASIMKVStoreInterstitialExtras;
-extern NSString* const kASIMKVStoreNativeExtras;
 
 // Ad Markup Types
 extern NSString* const kASIMAdMarkupTypeInMobiJSON;

@@ -156,9 +156,11 @@ typedef NS_ENUM(NSInteger, ASMediationStatus) {
 #define kIS_MAINTHREAD NSLog(@"-- Is Main Thread: %d", [[NSThread currentThread] isMainThread]);
 #define kDisplaySelf NSLog(@"----- %@", self);
 
+#define AS_WEAK_SELF __weak __typeof__(self)
+
 #pragma mark - Logging Macros
 
-#define DLog(FORMAT, ...) NSDateFormatter* format=[NSDateFormatter new]; format.locale=[NSLocale currentLocale]; format.dateFormat=@"yyyy.MM.dd HH:mm:ss.SSS"; NSArray* threadArr=[[NSString stringWithFormat:@"%@", [NSThread currentThread]] componentsSeparatedByString:@" "]; NSString* threadNumStr=[threadArr[3] substringToIndex:[threadArr[3] length]-1]; NSInteger threadNum=[threadNumStr integerValue]; printf("AerServ+InMobi-Unified-iOS-SDK | %s | %s | %s\n", [[NSString stringWithFormat:@"%@", [format stringFromDate:[NSDate date]]] UTF8String], [[NSString stringWithFormat:@"%d", (int)(threadNum+1000)] UTF8String], [[NSString stringWithFormat:FORMAT, __VA_ARGS__] UTF8String]); format=nil; threadArr=nil; threadNumStr=nil;
+#define DLog(FORMAT, ...) NSDateFormatter* format=[NSDateFormatter new]; format.locale=[NSLocale currentLocale]; format.dateFormat=@"yyyy.MM.dd HH:mm:ss.SSS"; NSArray* threadArr=[[NSString stringWithFormat:@"%@", [NSThread currentThread]] componentsSeparatedByString:@" "]; NSString* threadNumStr=[threadArr[3] substringToIndex:[threadArr[3] length]-1]; NSInteger threadNum=[threadNumStr integerValue]; printf("[InMobi] | %s | %s | %s\n", [[NSString stringWithFormat:@"%@", [format stringFromDate:[NSDate date]]] UTF8String], [[NSString stringWithFormat:@"%d", (int)(threadNum+1000)] UTF8String], [[NSString stringWithFormat:FORMAT, __VA_ARGS__] UTF8String]); format=nil; threadArr=nil; threadNumStr=nil;
 
 #pragma mark - Generic Javascript Queries
 

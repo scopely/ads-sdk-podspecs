@@ -9,8 +9,12 @@
 #else
     #import "MPBannerCustomEvent.h"
 #endif
+#if __has_include(<InMobiSDK/IMSdk.h>)
+    #import <InMobiSDK/IMBanner.h>
+#else
+    #import <ASIMUnifiedSDK/IMBanner.h>
+#endif
 
-#import <InMobiSDK/IMBanner.h>
 
 @interface InMobiBannerCustomEvent : MPBannerCustomEvent <IMBannerDelegate>
 

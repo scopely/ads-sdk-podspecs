@@ -15,6 +15,23 @@ typedef NS_ENUM(NSInteger, IMBiddingAdType) {
     kIMBiddingAdTypeRewarded
 };
 
+/*!
+ * ENUM to send errorCode on audienceBidderDidFailBidFor:withError
+ */
+
+typedef NS_ENUM(NSInteger, IMABErrorCodes) {
+    kIMAB_InValid_AdType = 201,
+    kIMAB_InValid_PlacementId = 202,
+    kIMAB_UnSupported_Format = 203,
+    kIMAB_AB_TimeOut = 204,
+    kIMAB_Unsupported_Class = 205
+};
+
+/*!
+ * Static error messages for IMAB
+ */
+#define kIMABErrorInvalidPlacementId @"Placement Id cannot be NULL or empty."
+
 @protocol IMAudienceBidderDelegate;
 @class IMBidObject;
 @class IMBidResponse;
@@ -79,8 +96,18 @@ typedef NS_ENUM(NSInteger, IMBiddingAdType) {
  * through the delegate callback -audienceBidderDidGenerateBidResponse:
  * @param type the IMBiddingAdType ENUM to designate the desired ad
  * @param plc the placement associated to the bid submitted
+ * @param adSize CGSize to represent width and height of banner ad.
  * @param delegate a callback protocol that will return a bid response
  */
++ (void)submitBidForAdType:(IMBiddingAdType)type withPlacement:(NSString*)plc adSize:(CGSize)adSize andDelegate:(id<IMAudienceBidderDelegate>)delegate;
+
+/*!
+* Submit bid for audience bidder with expectation that a bid response object will be returned
+* through the delegate callback -audienceBidderDidGenerateBidResponse:
+* @param type the IMBiddingAdType ENUM to designate the desired ad
+* @param plc the placement associated to the bid submitted
+* @param delegate a callback protocol that will return a bid response
+*/
 + (void)submitBidForAdType:(IMBiddingAdType)type withPlacement:(NSString*)plc andDelegate:(id<IMAudienceBidderDelegate>)delegate;
 
 /*!

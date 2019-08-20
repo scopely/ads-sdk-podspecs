@@ -40,7 +40,9 @@ typedef NS_ENUM(NSInteger, IMABSupportedAd) {
     kIMABSupportedAd_MPInterstitialAdController,
     kIMABSupportedAd_MPRewardedVideo,
     kIMABSupportedAd_ANBannerAdView,
-    kIMABSupportedAd_ANInterstitialAd
+    kIMABSupportedAd_ANInterstitialAd,
+    kIMABSupportedAd_DFPBannerAdView,
+    kIMABSupportedAd_DFPInterstitialAd
 };
 
 /*!
@@ -103,6 +105,12 @@ typedef NS_ENUM(NSInteger, IMABSupportedAd) {
  * This method will check if callback can be sent
  */
 - (BOOL)canSendCallback;
+
+/*!
+ * For Banner ads, set ad size to be requested
+ * @param adSize CGSize to represent width and height of banner ad
+ */
+- (void)setBannerSlotSize:(CGSize)adSize;
 
 #pragma mark - Helpers for processing keywords strings
 

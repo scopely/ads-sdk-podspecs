@@ -10,7 +10,12 @@
     #import "MPInterstitialCustomEvent.h"
 #endif
 
-#import <InMobiSDK/IMInterstitial.h>
+
+#if __has_include(<InMobiSDK/IMSdk.h>)
+    #import <InMobiSDK/IMInterstitial.h>
+#else
+    #import <ASIMUnifiedSDK/IMInterstitial.h>
+#endif
 
 @interface InMobiInterstitialCustomEvent : MPInterstitialCustomEvent <IMInterstitialDelegate>
 
