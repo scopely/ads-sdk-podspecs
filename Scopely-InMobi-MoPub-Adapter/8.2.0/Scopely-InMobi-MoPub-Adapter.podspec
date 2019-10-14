@@ -19,12 +19,12 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/scopely/ads-sdk-podspecs'
   s.license          = { :type => 'Commercial', :file => 'Scopely-InMobi/LICENSE' }
   s.author           = { 'carlos-scopely' => 'carloscastillo@scopely.com' }
-  s.source           = { :git => 'https://github.com/scopely/ads-sdk-podspecs.git', :tag => "InMobi-#{s.version}" }
+  s.source           = { :git => 'https://github.com/scopely/ads-sdk-podspecs.git', :tag => "InMobi-#{s.version}-new" }
 
   s.ios.deployment_target = '8.0'
   s.static_framework = true
-  s.source_files = 'Scopely-InMobi/MoPub-Adapter/*.{h,m}'
-  s.vendored_frameworks = 'Scopely-InMobi/SDK/InMobiSDK.framework'
+  s.source_files = 'Scopely-InMobi/#{s.version}/MoPub-Adapter/*.{h,m}'
+  s.vendored_frameworks = 'Scopely-InMobi/#{s.version}/SDK/InMobiSDK.framework'
   s.dependency 'mopub-ios-sdk', '5.8.0'
 end
  
