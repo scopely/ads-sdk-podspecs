@@ -22,6 +22,5 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
   s.static_framework = true
-  s.pod_target_xcconfig = { 'OTHER_CFLAGS' => '-fembed-bitcode' }
   s.vendored_frameworks = 'Scopely-Amazon/SDK/DTBiOSSDK.framework'
 end
