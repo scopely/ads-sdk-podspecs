@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'Scopely-Amazon'
+  s.name             = 'Scopely-Amazon-SDK'
   s.version          = '3.0.1'
   s.summary          = 'Scopely-Amazon SDK for games.'
   s.description      = <<-DESC
@@ -15,11 +15,11 @@ Pod::Spec.new do |s|
   DESC
 
   s.homepage     = 'https://github.com/scopely/ads-sdk-podspecs'
-  s.license      = { :type => 'MIT', :file => 'Scopely-Amazon/3.0.1/LICENSE' }
+  s.license      = { :type => 'MIT', :file => 'Scopely-Amazon-SDK/3.0.1/LICENSE' }
   s.author       = { 'Jose Pinero' => 'jose.pinero@scopely.com' }
   s.source       = { :git => 'https://github.com/scopely/ads-sdk-podspecs.git' }
 
   s.ios.deployment_target = '8.0'
   s.static_framework = true
-  s.vendored_frameworks = 'Scopely-Amazon/3.0.1/SDK/DTBiOSSDK.framework'
+  s.vendored_frameworks = 'Scopely-Amazon-SDK/3.0.1/SDK/DTBiOSSDK.framework'
 end
