@@ -23,8 +23,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
   s.static_framework = true
-  s.source_files = 'Scopely-InMobi/9.0.1/InMobiAdapter/*.{h,m}'
+  s.source_files = 'Scopely-InMobi/9.9.9/InMobiAdapter/*.{h,m}'
   s.dependency 'mopub-ios-sdk', '5.9.0'
-  s.dependency 'InMobiSDK', '9.9.9'
+  s.dependency 'InMobiSDK', '9.0.1'
 end
- 
