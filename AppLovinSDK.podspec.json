@@ -14,7 +14,8 @@
     "text": "\nCopyright 2021 AppLovin Corp. All rights reserved.\n\nThe AppLovin SDK is available under a commercial license (https://www.applovin.com/eula).\n\n"
   },
   "source": {
-    "git": "https://github.com/scopely/ads-sdk-podspecs.git"
+    "git": "https://github.com/scopely/ads-sdk-podspecs.git",
+    "branch": "applovin-6.15.1"
   },
   "vendored_frameworks": "applovin-ios-sdk-6.15.1/AppLovinSDK.framework",
   "module_map": "applovin-ios-sdk-6.15.1/AppLovinSDK.framework/Modules/module.modulemap",
