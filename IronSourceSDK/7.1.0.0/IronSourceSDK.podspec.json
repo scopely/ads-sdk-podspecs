@@ -12,7 +12,8 @@
     "IronSource": "http://www.ironsrc.com/contact/"
   },
   "source": {
-    
+    "git": "https://github.com/scopely/ads-sdk-podspecs.git",
+    "branch": "ironsource-7.1.0.0"
   },
   "source_files": "IronSource/IronSource.framework/**/*.{h,m}",
   "public_header_files": "IronSource/IronSource.framework/Versions/A/Headers/*.*",
